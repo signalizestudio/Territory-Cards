@@ -26,7 +26,7 @@ function locateUser() {
 // Territory layer
 let territoryLayer;
 
-fetch('territories1.geojson')
+fetch('territories1.json')
   .then(res => res.json())
   .then(data => {
     territoryLayer = L.geoJSON(data, {
@@ -54,4 +54,5 @@ function highlightTerritory(selectedLayer) {
   });
 
 }
+
 
